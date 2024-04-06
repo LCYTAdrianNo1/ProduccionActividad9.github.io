@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title> Cine Acme, S.A</title>
+      <link rel ="stylesheet" href="CSS/Estrellas.css">
+      <link rel ="stylesheet" href="CSS/FooterAndHeader.css">
+      <link rel ="stylesheet" href="CSS/EstrellasMovimiento.css">
+      <link rel ="stylesheet" href="CSS/Formulario.css">
+   </head>
+   <body>
+      <div class="header"> Cine Acme, S.A</div>
+      <div class="card">
+         <span class="title">Añadir comentarios</span>
+         <form class="form">
+            <div class="group">
+               <input placeholder="" type="text" required="">
+               <label for="name">Nombre</label>
+            </div>
+            <div class="group">
+               <input placeholder="" type="email" id="email" name="email" required="">
+               <label for="email">Correo</label>
+            </div>
+            <div class="group">
+               <textarea placeholder="" id="comment" name="comment" rows="5" required=""></textarea>
+               <label for="comment">comentarios</label>
+            </div>
+            <div class="rating">
+               <input value="5" name="rating" id="star5" type="radio">
+               <label for="star5"></label>
+               <input value="4" name="rating" id="star4" type="radio">
+               <label for="star4"></label>
+               <input value="3" name="rating" id="star3" type="radio">
+               <label for="star3"></label>
+               <input value="2" name="rating" id="star2" type="radio">
+               <label for="star2"></label>
+               <input value="1" name="rating" id="star1" type="radio">
+               <label for="star1"></label>
+            </div>
+            <button type="submit">Registrar</button>
+         </form>
+      </div>
+      <div class="footer">(C)  Cine Acme, S.A </div>
+   </body>
+</html>
