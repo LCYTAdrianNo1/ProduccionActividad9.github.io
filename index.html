@@ -8,12 +8,17 @@
       <link rel ="stylesheet" href="CSS/FooterAndHeader.css">
       <link rel ="stylesheet" href="CSS/EstrellasMovimiento.css">
       <link rel ="stylesheet" href="CSS/Formulario.css">
+      <link rel ="stylesheet" href="CSS/Desplazamiento.css">
+      <link rel ="stylesheet" href="CSS/BotonReiniciar.css">
+      <link rel ="stylesheet" href="CSS/BotonRegistrarRotacion.css">
    </head>
    <body>
-      <div class="header"> Cine Acme, S.A</div>
-      <div class="card">
+      <div class="header"> Cine Acme, S.A
+         <button id="reiniciar-btn">Reiniciar</button>
+      </div>
+      <div class="card" id="card">
          <span class="title">Añadir comentarios</span>
-         <form class="form">
+         <form class="form" id="commentForm">
             <div class="group">
                <input placeholder="" type="text" required="">
                <label for="name">Nombre</label>
@@ -24,7 +29,7 @@
             </div>
             <div class="group">
                <textarea placeholder="" id="comment" name="comment" rows="5" required=""></textarea>
-               <label for="comment">comentarios</label>
+               <label for="comment">Comentarios</label>
             </div>
             <div class="rating">
                <input value="5" name="rating" id="star5" type="radio">
@@ -38,9 +43,11 @@
                <input value="1" name="rating" id="star1" type="radio">
                <label for="star1"></label>
             </div>
-            <button type="submit">Registrar</button>
+            <button type="submit" id="registerButton">Registrar</button>
          </form>
       </div>
       <div class="footer">(C)  Cine Acme, S.A </div>
+      <script src="JS/Desplazamiento.js"></script>  
+      <script src="JS/Reiniciar.js"></script> 
    </body>
 </html>
