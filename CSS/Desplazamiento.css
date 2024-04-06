@@ -1,0 +1,7 @@
+#card {
+  transition: transform 1s ease;
+}
+
+.card.moveRight {
+  transform: translateX(350%);
+}
